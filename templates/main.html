@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazing app to help you find nearest MBTA station</title>
+    <style>
+        body {background-color: powderblue;}
+        h1   {color: darkblue;}
+        p    {color: darkblue;}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to the MBTA helper app!</h1>
+    <form action="/find_stop" method="post">
+        <input type="text" name="location", title="Landmark Near You"></input>
+        <input type="submit" value="Find Nearest T Stop"></input>
+        <select name='type'>
+            <option value="Station Type">All Station Types</option>
+            <option value="0">Tram, Streetcar, Light rail</option>
+            <option value="1">Subway, Metro</option>
+            <option value="2">Rail</option>
+            <option value="3">Bus</option>
+            <option value="4">Ferry</option>
+        </select>
+      </form>
+</body>
+</html>
